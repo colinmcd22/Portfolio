@@ -1,28 +1,102 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
 <html>
 <head>
 	<title>MehcanicAI | Colin McDonnell</title>
+	<link href="https://fonts.googleapis.com/css2?family=Overpass:wght@200;600&display=swap" rel="stylesheet">
 	<link rel = "stylesheet" href = "main.css">
 
 	<style>
+		@font-face{
+			font-family: 'Salsa';
+			src: url('Salsa/Salsa-Regular.ttf');
+
+		}
 		#header h1{
 			margin-bottom: 20px;
 			font-size:25px;
 			color: #646E78;
+
 		}
 		#header h2{
 			text-align: center;
 			font-size: 35px;
 			color: #03045E;
+			font-family: 'Overpass', sans-serif;
 		}
 		.text{
 			color: #646E78;
 			font-size: 20px;
+			font-family: 'Overpass', sans-serif;
 		}
 		#role{
 			font-size: 30px;
 		}
+		#role p{
+			line-height: 10px;
+		}
+		#board{
+			width: 400px;
+			height: 280px;
+			border-radius: 10px;
+			float:right;
+			margin: 20px;
+		}
+		#projectheader{
+			margin-bottom: 30px;
+		}
+		#process{
+			width: 100%;
+			margin-top: 10px;
+			display:block;
+			margin-left:auto;
+			margin-right:auto;
+
+		}
+		#research{
+			width: 100%;
+			float:left;
+			margin: 5px;
+			margin-bottom: 20px;
+		}
+		#problem{
+			float:left;
+			width:100%;
+			margin: 5px;
+		}
+		#wireframing{
+			width:900px;
+			margin: 30px;
+			margin-left: 0px;
+
+		}
+		#mockup{
+			width:700px;
+			height:400px;
+			margin:30px;
+			margin-left:100px;
+			border-radius: 10px;
+		}
+		#virtuoso{
+			font-size: 40px;
+			font-family: 'Salsa';
+			color: #03045E;
+		}
+		.researchimg{
+			width: 50%;
+			margin-left: 250px;
+		}
+		.researchcap{
+			text-align:center;
+			font-size: 20px;
+			margin-top: 0px;
+			margin-bottom: 35px;
+		}
+		iframe{
+			margin-left: 50px;
+		}
+
+
+
 	</style>
 </head>
 <body>
@@ -42,9 +116,96 @@
 	<div class = 'clearfloat'></div>
 
 	<div class = "text" id = "role">
-		Product Designer
+		
+		<img id = 'board' src = 'img/vvp1.png' alt = 'Visual Value Proposition 1'>
+		<div id = "virtuoso">MechanicAI</div>
+		Product Manager <br>
+		<p>Time - 4 weeks</p>
+		<p>Tools - Figma, Qualtrics</p>
+		<p>Team - Cassie Mann & Harris Chen</p>
 	</div>
+	<div class = "text" id = "projectheader">
+		MechanicAI is an end-to-end, mobile mechanic that can monitor and track your car's performance to let guide you in fixing any problems you may have. Using sensor technology, our software is able to analyze specific parts of your car to make sure you are fully aware of the current status of your vehicle. Additionally, MechanicAI allows you to find and book a mechanic near you based on price, location, and ratings.
+	</div>
+
+	<hr>
+
+	<div id = "process">
+		<div class = "text" id = "problem">
+		<h3>Problem Statement:</h3>
+			The process of diagnosing an issue with your car and getting it fixed it long, costly, and not enjoyable. It can be difficult to know exaclty how to solve an issue without spending hundreds of dollars on a simple mechanic visit.
+		</div>
+
+		<div class = "text" id = "research">
+			<h3>Research:</h3>
+			Extensive research was done for this project over the course of a 4 weeks along each stage of building our application.
+			Esentially, we had 3 stages of research to test various aspects of our application and design systems.
+			<br>
+			1. Use research to define the users
+				We began the project by collectively asking 5+ potential users about the concept for our project. 
+					<br>Do you own a car?
+					<br>How old are you?
+					<br>How important is it to your daily routine to have a car reliably? (1-5)
+					<br>What did you do the last time your car broke down?
+					<br>How often does your car break down often?
+					<br>Do you have any idea when you will need service on your car next?
+					<br>What were major pain points or bottlenecks with your experience the last time your car broke down and needed to be repaired?
+					<br>How would you feel if there was an app that predictively analyzes data from the car and driving patterns to predict if something has started to go wrong?
+				<br>These questions helped us define a few different "personas" or personality types that would use our app. The two types we defined we the casual user, someone that drives to get from A to B with little knowledge of cars, and the car enthusiast, someone that loves cars and knows them intimately.
+			<br><br>2. The second stage of research was to display our Visual Value Proposition version 1 and app mock ups. We received over 40 responses on our Qualtrics survey. Below are images of the survey.
+			<img class = 'researchimg' src = 'img/research1.png'>
+			<h3 class = 'researchcap'>Visual Value Proposition 1</h3>
+			<br>
+			<img class = 'researchimg' src = 'img/research2.png'>
+			<h3 class = 'researchcap'>Questions Asked about the VVP</h3>
+			<br>
+			<img class = 'researchimg' src = 'img/research3.png'>
+			<h3 class = 'researchcap'>Example Mockups and questions about them</h3>
+			<br>
+			<br>
+			<h3>Main Points:</h3>
+	        We learned that our Visual Value Proposition was too focused on one audience. It was not generizable and the users did not connect with it. Most said they enjoyed the text on it because it explained well what the product does, however. We also learned that our Mockups were far too incomplete and not ready to be shown. We needed to clean them up a lot to make them more understandable.
+	        <br><br>
+	        3. The final stage of research was to present our nearly complete product to our mentors. We went through our visual value proposition and presented our app mockups. Our VVP was still a bit too targeted for the serious users, rather than the general audience. Also, the flow of our presentation was not where it needed it to be. We fixed the order of our project as well as the look of our VVP. 
+
+
+
+
+		</div>
+
+		<div class = 'clearfloat'></div>
+		<hr>
+		<div class = "text" id = "wireframing">
+			<h3> Wireframes</h3>
+			The process of designing this app began with planning what each page would like like. As said earlier, we had 4 main pages that we needed to create a layout. Also, we needed a login and setup interface for when you first open the app. Lastly, we created the mechanic and payment system within the app. The 4 main pages are as listed below:<ul>
+			<li>Car Overview</li>
+			<li>Deeper Analytics</li>
+			<li>Alert Log</li>
+			<li>Mechanics</li>
+		</ul>
+			<br>
+			The first wireframes (shown above in the research section) were focused solely on the structure and planning the layout of the application. 
+			<br>
+			After receiving feedback on our first wireframe we completely reworked the entire look of the product as seen below. 
+			<br>
+
+		</div>
+		<hr>
+		<div class = "text" id = "final">
+			<h3>Final Mockup</h3>
+			The final mockup for MechanicAI turned out great! Attached below are photos the main homepages and the various features of each. From there you can scroll down to see the amenitites or click on the menu button to go to the map page. 
+			<iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FoKHWkukDQ4B1PuVAhk37OF%2F10-21-Wireframes%3Fnode-id%3D454%253A0%26scaling%3Dscale-down" allowfullscreen></iframe>
+		</div>
+		</div>
+
+		<div class = "text" id = "reflection">
+			<h3>Reflection:</h3>
+			This project really made me hunker down on my Figma skills. It took a lot of research and help to be able to successfully complete this assignment. I learned a lot about how to use Figma from prototyping to overlays, which I have continued to work on. This was a great project to learn about Figma and user research. I learned how to conduct proper research with an end goal in mind. Additionally, using this research, I learned how to create user personas to help narrow our product design.
+		</div>
+	</div>
+
+
 </div>
 
 </body>
-</html>
+</html> 
