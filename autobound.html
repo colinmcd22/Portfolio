@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Autobound | Colin McDonnell</title>
+	<link href="https://fonts.googleapis.com/css2?family=Overpass:wght@200;600&display=swap" rel="stylesheet">
+	<link rel = "stylesheet" href = "main.css">
+
+	<style>
+		@font-face{
+			font-family: 'Salsa';
+			src: url('Salsa/Salsa-Regular.ttf');
+
+		}
+		#header h1{
+			margin-bottom: 20px;
+			font-size:25px;
+			color: #646E78;
+
+		}
+		#header h2{
+			text-align: center;
+			font-size: 35px;
+			color: #03045E;
+			font-family: 'Overpass', sans-serif;
+		}
+		.text{
+			color: #646E78;
+			font-size: 20px;
+			font-family: 'Overpass', sans-serif;
+		}
+		#role{
+			font-size: 30px;
+			line-height: 50px;
+		}
+		#role p{
+			line-height: 35px;
+		}
+		#board{
+			width: 400px;
+			height: 280px;
+			border-radius: 10px;
+			float:right;
+			margin: 20px;
+		}
+		#projectheader{
+			margin-bottom: 30px;
+		}
+		#process{
+			width: 100%;
+			margin-top: 10px;
+			display:block;
+			margin-left:auto;
+			margin-right:auto;
+
+		}
+		#research{
+			width: 100%;
+			float:left;
+			margin: 5px;
+			margin-bottom: 20px;
+		}
+		#problem{
+			float:left;
+			width:100%;
+			margin: 5px;
+		}
+		#wireframing{
+			width:900px;
+			margin: 30px;
+			margin-left: 0px;
+
+		}
+		#mockup{
+			width:700px;
+			height:400px;
+			margin:30px;
+			margin-left:100px;
+			border-radius: 10px;
+		}
+		#virtuoso{
+			font-size: 40px;
+			font-family: 'Salsa';
+			color: #03045E;
+		}
+		.researchimg{
+			width: 50%;
+			margin-left: 250px;
+		}
+		.researchcap{
+			text-align:center;
+			font-size: 20px;
+			margin-top: 0px;
+			margin-bottom: 35px;
+		}
+		iframe{
+			margin-left: 50px;
+		}
+		.reqs{
+			width: 90%;
+			height: auto;
+			margin-left: 5%;
+		}
+		.caption{
+			text-decoration: bold;
+			text-align:center;
+		}
+
+
+
+	</style>
+</head>
+<body>
+<div id = "wrapper">
+	<div id = "header">
+		<h1>Colin McDonnell</h1>
+		<h2> Autobound </h2>
+		<div id = "navbar">
+		<div id = "nav">
+			<a href = 'about.html'> About</a>
+			<a id = 'active-nav' href = 'portfolio.html'> Work</a>
+		</div>
+		</div>
+
+	</div>
+
+	<div class = 'clearfloat'></div>
+
+	<div class = "text" id = "role">
+		
+		<img id = 'board' src = 'img/autobound.png' alt = 'Autobound logo'>
+		<div id = "virtuoso">Autobound</div>
+		<u>Data Science Intern</u><br>
+		<p>Time - 12 Weeks</p>
+		<p id = 'tools'>Tools - Python, Selenium, AWS, JavaScript, HTML, CSS</p>
+		<p id = 'team'>Team - Daniel Wiener, Kyle Schuster - Autbound Founders</p>
+	</div>
+	<div class = "text" id = "projectheader">
+		Autobound is an automated sales outreach platform that tells you who to contact, when to contact them, and what to say. Using their AI technology, Autobound is able to target potential clients like no other and uses previous conversations to tailor your messages. My project with Autobound consisted of expanding their database of clients through webscraping.
+	</div>
+
+	<hr>
+
+	<div id = "process">
+		<div class = "text" id = "problem">
+		<h3>Problem Statement:</h3>
+			<strong>Finding leads can be difficult.</strong> Knowing what to say to them and how to do so is even more difficult. There are so many different clients that sales people deal with every day, it can be hard to keep track of when and how to contact each. We need more data to create informative insights that tell us how we should be interacting with ouer clients.
+		</div>
+
+		<div class = "text" id = "research">
+			<h3>Solution:</h3>
+			In order to solve the problem of not enough leads or data on a specific type of lead, my manager Daniel and I decided that creating a webscrape would be ideal. In terms of what this webscraper needs to do, we had a set idea of what types of data needs to be scraped. All of the information that is scraped from users is stored into a database to later be analyzed and grouped. The main fields for the project are shown below.
+			<br>
+			<h3>Project Plan:</h3>
+			<img id = 'projdesc' src = 'img/projectdesc.png'>
+			<br>
+			<p> Going further, below are the different fields that we were interested in collecting ranked on importance. Additionally, it is important to differentiate company versus client data as these require different sources of scraping. Using LinkedIn, we can scrape individuals data fairly easily, however we must use a different site to scrape company data.</p>
+			<img class = 'reqs' id = 'individualreq' src = 'img/personal.png'>
+			<br>
+			<p>To get this data, I scraped mainly LinkedIn profiles based on different filters. On execution, the user can input filters to search for on LinkedIn</p>
+			<br>
+			<img class = 'reqs' id = 'companyreq' src = 'img/company.png'>
+			<br>
+			<p>To get the company wide data, I scraped mainly Indeed for job postings. I then took these job postings and navigated to the companies Indeed page. From there I was able to scrape the data needed for the company.</p>
+			<br>
+			<h3> Programs Used: </h3>
+			<p> Over the next 4 weeks, I researched and planned the best way to go about doing this project. I began by finding the best webscraping tools that are used with Python. The two main elements I was looking for in a webscraping tool were:</p>
+				<ol>
+					<li>Ability to automate clicking through a website</li>
+					<li>Ability to automate data parsing from HTML and JavaScript code</li>
+				</ol>
+			<p>
+				The three tools I brought it down to were BeautifulSoup, Selenium, and Scrapy. However, I chose to use Selenium as it allows for very easy website navigation since it was originally built as a website tester. Additionally, it has since been morphed into a webscraper that allows for parsing of data from the JavaScript DOM. Perfect. (I used BeautifulSoup later on in a few places as it pulls data very easily as well).
+			</p>
+			<img class = 'reqs' src = 'img/python.png'>
+			<img class = 'reqs' src = 'img/selenium.png'>
+			<br>
+			<p> I also integrated the final program into the NewsAPI software through Jupyter Notebooks. The NewsAPI software allows me to group and categorize companies based on the most relevant news stories at the time. This gave us a deeper look at what is going on at the company that each client works at.</p>
+
+		</div>
+
+		<div class = 'clearfloat'></div>
+		<hr>
+		<div class = "text" id = "wireframing">
+		</div>
+		<div class = "text" id = "final">
+			<h3>Final Mockup</h3>
+			<p> The final project turned out great! I was able to scrape over 500 individual users from LinkedIn on each execution. Each time it took about 15-20 minutes to scrape all of this public data. Addtionally, the program can be automated to continue running at a certain time each day using AWS Cloud software. I uploaded the project to the cloud so that the Autobound team can continue to use it after my internship completed. Below I attached some photos of the final CSV's obtained as well as the project in action! 
+			<br>
+			<br>
+			<img class = 'reqs' src = 'img/scraperesults.png' alt = 'Final CSV form'>
+			<p class = 'caption'>Results of the scraper</p>
+			<br>
+			<img class = 'reqs' src = 'img/filters.png' alt = "Project in use">
+			<p class = 'caption'>Filter Option</p>
+			<br>
+		</div>
+		</div>
+
+		<div class = "text" id = "reflection">
+			<h3>Reflection:</h3>
+			<p> Overall, this was a very successful project. I learned a ton about how to scrape the web as well Python, Selenium, HTML, CSS, and JavaScript. Before doing this project, my knowledge of HTML and CSS was minimal, but it required me to learn these softwares to understand the contents of a webpage. I now am able to scrape nearly any website and create my own websites as seen through this portfolio site! Thank you for reading about my project.
+		</div>
+	</div>
+
+
+</div>
+
+</body>
+</html> 
