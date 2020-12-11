@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Colin McDonnell | Portfolio | University of Southern California</title>
+
+	<link rel = 'stylesheet' href = 'main.css'>
+	<style>
+		#header h1{
+			font-size: 40px;
+			font-family:'Overpass', sans-serif;
+			text-align: left;
+			margin-left:20px;
+			color:#03045E;
+
+		}
+		#header p{
+			color: #646E78;
+			font-size: 20px;
+			margin-left:25px;
+			margin-bottom: -20px;
+			font-family:'Overpass', sans-serif;
+		}
+		#header img{
+			width: 140px;
+			height:140px;
+			border-radius: 50%;
+			float:right;
+			margin: 30px;
+		}
+
+		#header h1:hover{
+			color: #03045E;
+		}
+		.box:hover .centered{
+			visibility: visible;
+		}
+		.box:hover{
+			transform: scale(1.2);
+		}
+		.box:hover img{
+			opacity: 50%;
+		}
+		a:visited{
+			color:#03045E;
+		}
+		img{
+			width:90%;
+			height:auto;
+			object-fit: cover;
+
+		}
+		.column65{
+			width: 65%;
+			float: left;
+			height: 100%;
+		}
+		.column35{
+			width: 35%;
+			float: left;
+
+		}
+		.column35 p{
+			font-size: 20px;
+			margin: 10px;
+			line-height: 30px;
+			margin-top: 30px;
+		}
+		#body{
+			height: 600px;
+
+		}
+		#resume{
+			width: 100%;
+			height:auto;
+		}
+		#resume{
+			width: 100%;
+			box-shadow:1px 2px 5px #CCC;
+			height: 80px;
+		}
+		#wrapper{
+			height: 1000px;
+		}
+		#resume h3{
+			margin-top: 0px;
+			text-align: center;
+			line-height: 70px;
+			font-size: 40px;
+		}
+		#resume img{
+			display: none;
+		}
+		#resume:hover, img{
+			cursor: pointer;
+		}
+
+
+
+	</style>
+</head>
+
+<body>
+<div id = "wrapper">
+	<div id = "header">
+		<img id = 'profpic' src = 'img/profpic.jpeg' alt = 'Colin Profile Picture'>
+		<h1> Colin McDonnell</h1>
+		<p class = 'aboutme'>About Me</p>
+		<br>
+		<p>Junior at University of Southern California studying Cognitive Science and Data Science with a minor in Economics</p>
+		<div id = "navbar">
+		<div id = "nav">
+			<a href = 'about.html'> About</a>
+			<a id = 'active-nav' href = 'portfolio.html'> Work</a>
+		</div>
+		</div>
+
+	</div>
+
+	<div class = 'clearfloat'></div>
+
+	<div id = 'body'>
+		<div class = 'column65'>
+			<img id = 'picofme' src = 'img/meonbike.png'>
+		</div>
+		<div class = 'column35'>
+			<p> Colin is a current student at USC who is heavily involved in the entrepreneurship scene on campus. Colin is on the Core Team for Spark SC, USC's largest entrepreneurship organization and led a team of engineers and designers with LavaLab. More than just on campus organizations, Colin loves to create websites, games, and read. Being a socialable person, Colin loves to spend time with family and friends and believes that everyone can be a teacher. With this mindset, Colin was able to adapt to 4 different cities over the course of his life, giving him a unique perspective.</p>
+		</div>
+
+	<div class = 'clearfloat'></div>
+
+	<div id = 'resume'>
+		<h3> Resume</h3>
+		<img id = 'resumepic' src = 'img/resume.jpg'>
+	</div>
+</div>
+
+
+</div>
+
+<script>
+
+	count = 0;
+	document.querySelector('#resume').onclick = function(){
+		if(count <1){
+			document.querySelector('#resumepic').style.display='block';
+
+		}
+		else if(count >=1){
+			document.querySelector('#resumepic').style.display = 'none';
+			count = 0;
+		}
+		count+=1;
+
+
+	}
+
+
+</script>
+
+</body>
+</html>
