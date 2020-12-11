@@ -65,8 +65,12 @@
 			top: 50%;
 			left: 50%;
 			transform: translate(-50%, -50%);
-			visibility: hidden;
+			visibility: visible;
+			color: black;
+			text-shadow: 3px;
 			font-size:40px;
+			background-color: #f9f9f9;
+			border-radius: 5px;
 
 		}
 		img{
@@ -79,6 +83,14 @@
 			width: 350px;
 			height:390px;
 		}
+		h2{
+			text-align: center;
+			font-size: 36px;
+
+		}
+		#projects{
+			line-height: 75px;
+		}
 
 
 	</style>
@@ -89,7 +101,7 @@
 	<div id = "header">
 		<img id = 'profpic' src = 'img/profpic.jpeg' alt = 'Colin Profile Picture'>
 		<h1> Colin McDonnell</h1>
-		<p> Hi! I'm Colin and I'm currently a product designer for MechanicAI. I am a Junior at the University of Southern California studying Data Science and Cognitive Science, heavily focused on entrepreneurial efforts!</p>
+		<p> Hi! I'm Colin and I'm currently a Core Team Lead for Spark SC, USC's largest entrepreneurship organization. I am a Junior at the University of Southern California studying Data Science and Cognitive Science, heavily focused on entrepreneurial efforts!</p>
 		<div id = "navbar">
 		<div id = "nav">
 			<a href = 'about.html'> About</a>
@@ -103,6 +115,39 @@
 
 	<div id = "container">
 
+		<h2>Work Experience</h2>
+		<div class = "row" id = "row2">
+			<div class = "box" id = 'row2col1'>
+			<a href = 'autobound.html'>
+				<img id = 'r2c1' src = 'img/autobound.png' alt = 'Autobound Logo'>
+				<div class = 'centered'> Autobound</div>
+			</a>
+			</div>
+			<div class = "box" id = 'row2col2'>
+				<a href = 'spark.html'>
+				<img id = 'r2c2' src = 'img/sparksc.png' alt = 'Spark SC Logo'>
+				<div class = 'centered'> Spark SC</div>
+			</a>
+			</div>
+		</div>
+
+		<div class = "row" id = "row3">
+			<div class = "box" id = 'row3col1'>
+				<a href = 'lavalab.html'>
+				<img id = 'r3c1' src = 'img/lavalab.png' alt = 'Lavalab Logo'>
+				<div class = 'centered'> LavaLab</div>
+			</a>
+			</div>
+			<div class = "box" id = 'row3col2'>
+				<a href = 'nbc.html'>
+				<img id = 'r3c2' src = 'img/nbc.png' alt = 'NBC logo'>
+			</a>
+			</div>
+		</div>
+
+
+		<h2 id = 'projects'> Projects</h2>
+
 		<div class = "row" id = "row1">
 			<div class = "box" id = 'row1col1'>
 				<a href = 'mechanicai.html'>
@@ -113,19 +158,8 @@
 			<div class = "box" id = 'row1col2'>
 			<a href = 'hotel.html'>
 				<img id = 'r1c2' src = 'img/hotel.png' alt = 'LavaLab Logo'>
-				<div class = 'centered'> Hotel Project</div>
+				<div class = 'centered'> Hotel Virtuoso</div>
 			</a>
-			</div>
-		</div>
-
-		<div class = "row" id = "row2">
-			<div class = "box" id = 'row2col1'>
-				<img id = 'r2c2' src = 'img/autobound.png' alt = 'Autobound Logo'>
-				<div class = 'centered'> Autobound</div>
-			</div>
-			<div class = "box" id = 'row2col2'>
-				<img id = 'r2c2' src = 'img/sparksc.png' alt = 'Spark SC Logo'>
-				<div class = 'centered'> Spark SC</div>
 			</div>
 		</div>
 
